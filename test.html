@@ -4,17 +4,17 @@
 		<title><CharacterSheet></title>
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 		<style type="text/css">
-			legend {
-				font-size: 125%;
-				padding: 0 1em;
-				border: 1px solid #ccc;
-			}
-			fieldset {
-				margin: 1em;
-			}
-			h1 {
-				text-align: center;
-			}
+		legend {
+			font-size: 125%;
+			padding: 0 1em;
+			border: 1px solid #ccc;
+		}
+		fieldset {
+			margin: 1em;
+		}
+		h1 {
+			text-align: center;
+		}
 		</style>
 	</head>
 	<body>
@@ -22,16 +22,16 @@
 		<div class="row">
 			<form class="col s12">
 				<div class="input-field col s3">
-					<input type="text" name="Name">
-					<label for="Name">Name</label>
+					<input type="text" name="name">
+					<label for="name">name</label>
 				</div>
 				<div class="input-field col s3">
-					<input type="text" name="Race">
-					<label for="Race">Race</label>
+					<input type="text" name="race">
+					<label for="race">race</label>
 				</div>
 				<div class="input-field col s3">
-					<input type="text" name="Class">
-					<label for="Class">Class</label>
+					<input type="text" name="class">
+					<label for="class">class</label>
 				</div>
 				<div class="input-field col s3">
 					<input type="text" name="level">
@@ -41,73 +41,216 @@
 				<fieldset class="col s6">
 					<legend>Stats</legend>
 					<div class="input-field col s4">
-						<input type="number" min="0" max="30"name="Strangth">
-						<label for="Strangth">Strangth</label>
+						<input type="number" min="0" max="30"name="strangth">
+						<label for="strangth">strangth</label>
 					</div>
 					<div class="input-field col s4">
-						<input type="number" min="0" max="30"name="Dexterity">
-						<label for="Dexterity">Dexterity</label>
+						<input type="number" min="0" max="30"name="dexterity">
+						<label for="dexterity">dexterity</label>
 					</div>
 					<div class="input-field col s4">
-						<input type="number" min="0" max="30"name="Constitution">
-						<label for="Constitution">Constitution</label>
+						<input type="number" min="0" max="30"name="constitution">
+						<label for="constitution">constitution</label>
 					</div>
 					<div class="input-field col s4">
-						<input type="number" min="0" max="30"name="Intelligence">
-						<label for="Intelligence">Intelligence</label>
+						<input type="number" min="0" max="30"name="intelligence">
+						<label for="intelligence">intelligence</label>
 					</div>
 					<div class="input-field col s4">
-						<input type="number" min="0" max="30"name="Wisdom">
-						<label for="Wisdom">Wisdom</label>
+						<input type="number" min="0" max="30"name="wisdom">
+						<label for="wisdom">wisdom</label>
 					</div>
 					<div class="input-field col s4">
-						<input type="number" min="0" max="30"name="Charisma">
-						<label for="Charisma">Charisma</label>
+						<input type="number" min="0" max="30"name="charisma">
+						<label for="charisma">charisma</label>
 					</div>
 				</fieldset>
 				
 				<fieldset class="col s6">
 					<legend>Defenses</legend>
 					<div class="input-field col s3">
-						<input type="number" min="10" max="30"name="Armor_Class">
-						<label for="Armor Class">Armor_Class</label>
+						<input type="number" min="10" max="30"name="armor_class">
+						<label for="armor class">armor_class</label>
 					</div>
 					<div class="input-field col s3">
-						<input type="number" min="8" max="30" name="Physical_Defence">
-						<label for="Physical_Defence">Physical_Defence</label>
+						<input type="number" min="8" max="30" name="physical_defence">
+						<label for="physical_defence">physical_defence</label>
 					</div>
 					<div class="input-field col s3">
-						<input type="number" min="8" max="30" name="Mental_Defence" >
-						<label for="Mental_Defence">Mental_Defence</label>
+						<input type="number" min="8" max="30" name="mental_defence" >
+						<label for="mental_defence">mental_defence</label>
 					</div>
 				</fieldset>
 				
-				<fieldset><legend>Hit_Points</legend>
-				<div class="input-field col s3">
-					<input type="number" name="Current_Hit_Points">
-					<label for="Hit_Points">Current_Hit_Points</label>
-				</div>
-				<div class="input-field col s3">
-					<input type="number" name="Maximum_Hit_Points">
-					<label for="Hit_Points">Maximum_Hit_Points</label>
-				</div>
+				<fieldset><legend>Hit Points</legend>
+					<div class="input-field col s3">
+						<input type="number" name="current_hit_points">
+						<label for="hit_Points">current_hit_points</label>
+					</div>
+					<div class="input-field col s3">
+						<input type="number" name="maximum_hit_points">
+						<label for="hit_points">maximum_hit_points</label>
+					</div>
 				</fieldset>
 				<fieldset><legend>Recoveries</legend>
-				<div class="input-field col s3">
-					<input type="number" name="Current_Recoveries">
-					<label for="Recoveries">urrent_Recoveries</label>
-				</div>
-				<div class="input-field col s3">
-					<input type="number" name="Maximum_Recoveries">
-					<label for="Recoveries">Maximum_Recoveries</label>
-				</div>
+					<div class="input-field col s3">
+						<input type="number" name="current_recoveries">
+						<label for="recoveries">current_recoveries</label>
+					</div>
+					<div class="input-field col s3">
+						<input type="number" name="maximum_recoveries">
+						<label for="recoveries">maximum_recoveries</label>
+					</div>
 				</fieldset>
-				<fieldset><legend>Recovery_Roll</legend>
-				<div class="input-field col s3">
-					<input type="number" name="Recovery_Roll">
-					<label for="Recovery_Roll">Recovery_Roll</label>
-				</div>
-			</fieldset>
+				<fieldset><legend>Recovery Roll</legend>
+					<div class="input-field col s3">
+						<input type="number" name="recovery_roll">
+						<label for="recovery_roll">recovery_roll</label>
+					</div>
+				</fieldset>
+					<fieldset><legend>Basic Melee Attack</legend>
+					<div class="input-field col s3">
+						<input type="number" min="0" max="30"name="attack">
+						<label for="attck">attck</label>
+					</div>
+					<div class="input-field col s3">
+						<input type="number" min="0" max="30"name="hit">
+						<label for="hit">hit</label>
+					</div>
+					<div class="input-field col s3">
+						<input type="number" min="0" max="30"name="miss">
+						<label for="miss">miss</label>
+				</fieldset>
+				<fieldset><legend>Basic Ranged Attack</legend>
+					<div class="input-field col s3">
+						<input type="number" min="0" max="30"name="attack">
+						<label for="attck">attck</label>
+					</div>
+					<div class="input-field col s3">
+						<input type="number" min="0" max="30"name="hit">
+						<label for="hit">hit</label>
+					</div>
+					<div class="input-field col s3">
+						<input type="number" min="0" max="30"name="miss">
+						<label for="miss">miss</label>
+				</fieldset>
+				<fieldset><legend>Gold Pieces</legend>
+					<div class="input-field col s2">
+						<input type="number" name="gold_pieces">
+						<div for="gold_pieces">gold_pieces</div>
+				<fieldset>
+					<legend>One Unique Thing</legend>
+					<div class="input-field col s6">
+						<textarea class="materialize-textarea"></textarea>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Icon Relationships</legend>
+					<div class="input-field col s4">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Background</legend>
+					<div class="input-field col s4">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Class Features</legend>
+					<div class="input-field col s4">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Talents</legend>
+					<div class="input-field col s3">
+						<input type="text" name="1icons[]">
+						<input type="text" name="2icons[]">
+						<input type="text" name="3icons[]">
+						<input type="text" name="4icons[]">
+						<input type="text" name="5icons[]">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Feats</legend>
+					<div class="input-field col s5">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Racial Power</legend>
+					<div class="input-field col s3">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Powers&Spells</legend>
+					<div class="input-field col s3">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Equipment</legend>
+					<div class="input-field col s3">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Magic Items</legend>
+					<div class="input-field col s3">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+						<input type="text" name="icons[]">
+					</div>
+				</fieldset>
 			</form> 
 		</div>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
