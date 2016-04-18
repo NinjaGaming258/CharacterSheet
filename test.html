@@ -1,0 +1,116 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title><CharacterSheet></title>
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+		<style type="text/css">
+			legend {
+				font-size: 125%;
+				padding: 0 1em;
+				border: 1px solid #ccc;
+			}
+			fieldset {
+				margin: 1em;
+			}
+			h1 {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Charactor Sheet For 13th Age</h1>
+		<div class="row">
+			<form class="col s12">
+				<div class="input-field col s3">
+					<input type="text" name="Name">
+					<label for="Name">Name</label>
+				</div>
+				<div class="input-field col s3">
+					<input type="text" name="Race">
+					<label for="Race">Race</label>
+				</div>
+				<div class="input-field col s3">
+					<input type="text" name="Class">
+					<label for="Class">Class</label>
+				</div>
+				<div class="input-field col s3">
+					<input type="text" name="level">
+					<label for="level">level</label>
+				</div>
+				
+				<fieldset class="col s6">
+					<legend>Stats</legend>
+					<div class="input-field col s4">
+						<input type="number" min="0" max="30"name="Strangth">
+						<label for="Strangth">Strangth</label>
+					</div>
+					<div class="input-field col s4">
+						<input type="number" min="0" max="30"name="Dexterity">
+						<label for="Dexterity">Dexterity</label>
+					</div>
+					<div class="input-field col s4">
+						<input type="number" min="0" max="30"name="Constitution">
+						<label for="Constitution">Constitution</label>
+					</div>
+					<div class="input-field col s4">
+						<input type="number" min="0" max="30"name="Intelligence">
+						<label for="Intelligence">Intelligence</label>
+					</div>
+					<div class="input-field col s4">
+						<input type="number" min="0" max="30"name="Wisdom">
+						<label for="Wisdom">Wisdom</label>
+					</div>
+					<div class="input-field col s4">
+						<input type="number" min="0" max="30"name="Charisma">
+						<label for="Charisma">Charisma</label>
+					</div>
+				</fieldset>
+				
+				<fieldset class="col s6">
+					<legend>Defenses</legend>
+					<div class="input-field col s3">
+						<input type="number" min="10" max="30"name="Armor_Class">
+						<label for="Armor Class">Armor_Class</label>
+					</div>
+					<div class="input-field col s3">
+						<input type="number" min="8" max="30" name="Physical_Defence">
+						<label for="Physical_Defence">Physical_Defence</label>
+					</div>
+					<div class="input-field col s3">
+						<input type="number" min="8" max="30" name="Mental_Defence" >
+						<label for="Mental_Defence">Mental_Defence</label>
+					</div>
+				</fieldset>
+				
+				<fieldset><legend>Hit_Points</legend>
+				<div class="input-field col s3">
+					<input type="number" name="Current_Hit_Points">
+					<label for="Hit_Points">Current_Hit_Points</label>
+				</div>
+				<div class="input-field col s3">
+					<input type="number" name="Maximum_Hit_Points">
+					<label for="Hit_Points">Maximum_Hit_Points</label>
+				</div>
+				</fieldset>
+				<fieldset><legend>Recoveries</legend>
+				<div class="input-field col s3">
+					<input type="number" name="Current_Recoveries">
+					<label for="Recoveries">urrent_Recoveries</label>
+				</div>
+				<div class="input-field col s3">
+					<input type="number" name="Maximum_Recoveries">
+					<label for="Recoveries">Maximum_Recoveries</label>
+				</div>
+				</fieldset>
+				<fieldset><legend>Recovery_Roll</legend>
+				<div class="input-field col s3">
+					<input type="number" name="Recovery_Roll">
+					<label for="Recovery_Roll">Recovery_Roll</label>
+				</div>
+			</fieldset>
+			</form> 
+		</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	</body>
+	</html>
